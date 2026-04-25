@@ -1,0 +1,10 @@
+{
+  "name": "listinglaunch-ai-fullsaas",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Full-stack ListingLaunch AI app without external npm dependencies.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  }
+}

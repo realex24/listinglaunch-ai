@@ -1,43 +1,51 @@
-# ListingLaunch AI
+# ListingLaunch AI Full SaaS
 
-ListingLaunch AI is a browser-based real estate marketing workspace for solo agents.
+This is a real full-stack app project for ListingLaunch AI.
 
 ## What Is Included
 
-- `index.html`: the main app
-- `styles.css`: app styles
-- `app.js`: app logic
-- `REAL_ESTATE_AI_MARKETING_SAAS_BLUEPRINT.md`: business blueprint
-- `LISTINGLAUNCH_AI_MVP_SPEC.md`: MVP requirements
+- `server.js`: Node.js server and API
+- `public/`: browser client
+- `data/db.json`: file-based database
+- `package.json`: project metadata
 
-## What Works Right Now
+## What Works
 
-- brand profile settings
-- saved listings
-- listing generation workflow
+- user registration
+- user login and logout
+- server-side sessions with cookies
+- saved brand profile
+- plan selection and plan limits
+- listing CRUD
+- listing duplication
+- server-side asset generation
 - editable marketing assets
-- plan limits
-- text export and download
-- local persistence in the browser
+- bundle export
+- persistent storage in `data/db.json`
 
-## How To Publish On GitHub Pages
+## How To Run
 
-1. Upload all files in this folder to the root of your GitHub repo.
-2. Go to the repo settings.
-3. Open `Pages`.
-4. Set the source to `Deploy from a branch`.
-5. Choose `main` and `/root`.
-6. Save.
+1. Open a terminal in this folder.
+2. Run:
 
-GitHub Pages should then publish `index.html` as the main app.
+```bash
+node server.js
+```
+
+3. Open:
+
+```text
+http://localhost:8787
+```
 
 ## Important Note
 
-This package is a working browser app. It does not yet include:
+This is a full-stack local app. It does not yet include:
 
-- user login
-- cloud database
-- Stripe billing
-- live AI API calls
+- Stripe payments
+- email delivery providers
+- SMS delivery providers
+- real OpenAI API generation
+- cloud database hosting
 
-Those require backend services and keys.
+Those require external services and credentials.
